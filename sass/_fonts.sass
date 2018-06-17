@@ -1,0 +1,22 @@
+@import "_mixins/font-face"
+
++font-face("Canaro-Black", "../fonts/Canaro-Black.otf")
++font-face("Canaro-BlackItalic", "../fonts/Canaro-BlackItalic.otf")
++font-face("Canaro-Bold", "../fonts/Canaro-Bold.otf")
++font-face("Canaro-BoldItalic", "../fonts/Canaro-BoldItalic.otf")
++font-face("Canaro-Book", "../fonts/Canaro-Book.otf")
++font-face("Canaro-BookItalic", "../fonts/Canaro-BookItalic.otf")
++font-face("Canaro-ExtraBold", "../fonts/Canaro-ExtraBold.otf")
++font-face("Canaro-ExtraLight", "../fonts/Canaro-ExtraLight.otf")
++font-face("Canaro-Light", "../fonts/Canaro-Light.otf")
++font-face("Canaro-LightItalic", "../fonts/Canaro-LightItalic.otf")
++font-face("Canaro-Medium", "../fonts/Canaro-Medium.otf")
++font-face("Canaro-MediumItalic", "../fonts/Canaro-MediumItalic.otf")
++font-face("Canaro-SemiBold", "../fonts/Canaro-SemiBold.otf")
++font-face("Canaro-SemiBoldItalic", "../fonts/Canaro-SemiBoldItalic.otf")
++font-face("Canaro-Thin", "../fonts/Canaro-Thin.otf")
++font-face("Canaro-ThinItalic", "../fonts/Canaro-ThinItalic.otf")
+
+$list: Black BlackIt Bold BoldIt Extrabld ExtrabldIt Light LightIt Regular RegularIt Semibold SemiBoldIt ThinIt Thin
+@each $author in $list
+  +font-face("ProximaNova-#{$author}", "../fonts/ProximaNova-#{$author}.ttf")
